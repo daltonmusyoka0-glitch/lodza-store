@@ -1,49 +1,123 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>LODZA Streetwear</title>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>LODZA | Streetwear</title>
+
   <style>
     body {
       margin: 0;
-      font-family: Arial, sans-serif;
-      background: #0f0f0f;
-      color: white;
+      font-family: Arial, Helvetica, sans-serif;
+      background: #000;
+      color: #fff;
       text-align: center;
     }
+
     header {
-      padding: 60px 20px;
+      padding: 80px 20px;
     }
+
     h1 {
-      font-size: 3rem;
+      font-size: 48px;
       letter-spacing: 4px;
     }
+
     p {
-      opacity: 0.8;
+      color: #aaa;
+      margin-top: 10px;
     }
+
     .btn {
-      display: inline-block;
       margin-top: 30px;
-      padding: 15px 30px;
-      border: 2px solid white;
-      color: white;
-      text-decoration: none;
-      letter-spacing: 2px;
+      padding: 15px 35px;
+      background: #fff;
+      color: #000;
+      border: none;
+      font-size: 16px;
+      cursor: pointer;
     }
-    .btn:hover {
-      background: white;
-      color: black;
+
+    .products {
+      padding: 60px 20px;
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 20px;
+    }
+
+    .product {
+      background: #111;
+      padding: 20px;
+      border: 1px solid #222;
+    }
+
+    .product img {
+      width: 100%;
+      height: 220px;
+      object-fit: cover;
+    }
+
+    .product h3 {
+      margin: 15px 0 5px;
+    }
+
+    .price {
+      color: #ccc;
+      margin-bottom: 10px;
+    }
+
+    .add {
+      padding: 10px;
+      width: 100%;
+      background: #fff;
+      color: #000;
+      border: none;
+      cursor: pointer;
+    }
+
+    footer {
+      padding: 40px;
+      color: #666;
+      font-size: 14px;
     }
   </style>
 </head>
+
 <body>
 
 <header>
   <h1>LODZA</h1>
   <p>Streetwear Online Store</p>
-  <a class="btn" href="#">Shop Now</a>
+  <button class="btn">Shop Now</button>
 </header>
+
+<section class="products">
+  <div class="product">
+    <img src="https://via.placeholder.com/300x300" alt="Hoodie">
+    <h3>LODZA Hoodie</h3>
+    <div class="price">KES 3,500</div>
+    <button class="add">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="https://via.placeholder.com/300x300" alt="T-Shirt">
+    <h3>LODZA T-Shirt</h3>
+    <div class="price">KES 1,800</div>
+    <button class="add">Add to Cart</button>
+  </div>
+
+  <div class="product">
+    <img src="https://via.placeholder.com/300x300" alt="Cap">
+    <h3>LODZA Cap</h3>
+    <div class="price">KES 1,200</div>
+    <button class="add">Add to Cart</button>
+  </div>
+</section>
+
+<footer>
+  © 2026 LODZA Streetwear. All rights reserved.
+</footer>
 
 </body>
 </html>
